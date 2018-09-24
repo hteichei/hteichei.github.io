@@ -1,104 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-	<title>Portfolio Website</title>
-	<link rel="stylesheet" type="text/css" href="portfolio.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
-	<link rel="stylesheet" href="fake_resume.pdf">
+    <meta charset="UTF-8">
+    <title>Hank Teicheira</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
-	<div class="pageOne">
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div id="navContainer" class="container">
-				<ul class="nav nav-pills">
-					<li>
-						<a href="#">Hank Teicheira</a>
-					</li>
-					<li class='pull-right'>
-						<a href="#contactMe">Contact Me</a>
-					</li>
-					<li class='pull-right'>
-						<a href="#transitionBlock">About Me</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
+        <div class="sticky-top">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand pl-3" href="#p1">Home</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                
+                  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav m">
+                      <li class="nav-item pr-3">
+                        <a class="nav-link" href="#p2">Projects</a>
+                      </li>
+                      <li class="nav-item pr-3">
+                        <a class="nav-link" href="#p3">About</a>
+                      </li>
+                      <li class="nav-item pr-3">
+                        <a class="nav-link" href="#p4">Contact</a>
+                      </li>
+                      <li class="nav-item dropdown">
 
-		<div id='nameBlock' class='block text-center'>
-			<h1 id='name'>Hank Teicheira</h1>
-		</div>
-		<div class='col-md-12 text-center'>
-			<img id='profPic' src="https://lh3.googleusercontent.com/5WUojeQJytTyFvIccEMZYEnX3SF-l3w3sm1dk9NC2ad29RwQOPj-zojuTq_TJXL7RvCoYKyG4mgCTIxUVCloV1Qj5u4u7qOIOQzyt8I_QvJimoaHvk85QyjD7FRJmjMQJZxvIm_nCTqNXbyzay093HNhtztLMo5TSlbNfggyu9li77EwvKhBEq_kwVAzoPN9EF0Pu9Ed9lFyG-FXPan8NdAZdq0hTrS1bhp9hN96pkJkwBofIFjL_HzmLS8lROEnqLkV_Ea00EzeDgzRFXcJRVb-ksFb_PO4Z_lrkAhAozBfurKvrLRgmVIRic1F21Ve1H24_UUcE2KqVvVK1syxFyG5a3flhHTftrgAIV6srQc2SzuTcDIF1klPyCF0kjeZZp7HIxs_CeHV4uqftA0cp26gyjOCJGMpkEnDq-tiD-u5UhhcPlDxO2hfczOsp0eFBCHcKW5_GwJSt2ehDmcyKI3Ci0ghQUJ0F0vZYqCTmVPjGNbSloj_3KII6JoQAltFq10o6IMrgcAcaYKlfTi20YC4mLp4ggDQe8JWDpFWo5gYKvocXu-bs50dlRWjaHRQR9xMMh_BQ8heT-UgPBgTt1IvnKYhEVS2N2UgrhU=w1188-h1064-no">
-		</div>
-		<div class='text-center'>
-			<button class="btn btn-default">Instagram</button>
-			<button class='btn btn-default'>LinkedIn</button>
-			<a href="https://github.com/hteichei" target='_blank'>
-				<button class='btn btn-default'>GitHub</button>
-			</a>
-		</div>
-	</div>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="#">Action</a>
+                          <a class="dropdown-item" href="#">Another action</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                </div>
 
-	<div id='transitionBlock' class='transition'></div>
+    <div class="pageOne block text-center" id="p1">
+        <h2 class="titleWhite">HANK TEICHEIRA</h2>
+        <h4>Full Stack Software Engineer</h4>
+    </div>
+    <div class="pageTwo text-center" id="p2">
+        <h1 class="titleColor">PROJECTS</h1>
+        <br>
+        <ul class="img-list">
+            <li>
+                <a href="https://github.com/hteichei/LinkdList-frontend" target="blank">
+                    <img src="images/linkdList.jpg" width="350" height="300" alt="linkedIn clone" />
+                    <span class="text-content"><span>LinkedIn Clone with React front-end and Express back-end</span></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/hteichei/Warbler" target="blank">
+                    <img src="images/warbler.png" width="350" height="300" alt="twitter clone app" />
+                    <span class="text-content"><span>Twitter clone using PostgreSQL, Python and Flask</span></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://hteichei.github.io/Memory-Game/" target="blank">
+                    <img src="images/cats.png" width="350" height="300" alt="memory game app" />
+                    <span class="text-content"><span>Memory matching game written in Vanilla JS</span></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/hteichei/flask-pet-adoption" target="blank">
+                    <img src="images/newpets.png"
+                        width="350" height="300" alt="pet adoption app" />
+                    <span class="text-content"><span>Pet Adoption application consuming petfinder.com API</span></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://hteichei.github.io/meme_project/" target="blank">
+                    <img src="images/memeGen.png"
+                        width="350" height="300" alt="meme generator app" />
+                    <span class="text-content"><span>Meme generator written in Vanilla JS</span></span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/hteichei/hack-or-snooze-project" target="blank">
+                    <img src="images/hackForm.png" width="350" height="300" alt="hacker news clone" />
+                    <span class="text-content"><span>Hacker News Clone written in jQuery with full CRUD</span></span>
+                </a>
+            </li>
+        </ul>
+    </div>
 
-	<div class='pageTwo'>
+    <div class="pageThree text-center" id="p3">
+        <div>
+          <div class='container'>
+              <h1 class="titleWhite text-center">ABOUT ME</h1>
+              <div class="row">
+                  <div class="col-lg-3 mx-auto text-center">
+                      <img id='profPic' src="images/meAgain.jpg" alt="profile picture">
+                  </div>
+                  <div class="col-lg-1 mx-auto text-center"></div>
+                  <div class="col-lg-7 mx-auto text-left aboutMe">
+                      <br>
+                        <p>
+                        My first glimpse into the world of web development came after I started a small, 
+                        organic vegetable farm in my last year in college, when I began thinking about how 
+                        software applications could be used to improve the overall efficiency of small-farm 
+                        businesses.  Later on, I realized that I could be the person 
+                        to build those applications.  
+                        </p>
+                        <br>
+                        <p>
+                        Today, I am inspired by clean, elegant, 
+                        and easy-to-read code, and I strive to incorporate these principles into my own 
+                        work.  Outside of programming, I love cooking, gardening, rock-climbing, reading 
+                        great books, and foraging for wild mushrooms.
+                      </p>
+              </div>
+              </div>
+          </div>
+        </div>
+    </div>
 
-		<div class='container-fluid'>
-			<div class='row'>
-				<div id='delay' class='col-md-12 col-sm-12 text-center'>
-					<h1 id='aboutMe' class='aboutHead'>About Me</h1>
-					<div class='block'>
-						<p id='pee1' class="content">
-							Hi, my name is Hank Teicheira and I am starting my journey into the world of web development. Before entering the realm of
-							computer programming, I studied winemaking at UC Davis, where I developed a passion for creating unique products.
-							In my last year in school, I started a small, organic vegetable farm just outside of Davis, California, which grew
-							beautiful produce for sale at Sacramento and Bay Area restaurants.
-						</p>
-						<p>
-							<br>
-						</p>
-						<p id='pee2' class='content'>
-							My love for producing things definitely fueled my interest in web development, and I plan to incorporate my interests in
-							food and farming into developing meaningful applications to benefit producers and consumers in those industries. Outside
-							of computer programming, I love to garden, hike, cook, and forage for wild mushrooms.
-						</p>
-					</div>
-
-				</div>
-			</div>
-			<div id='download'>
-				<a href="fake_resume.pdf" download="resume.pdf" target='_blank'>
-					<button id='hoverMe'>Download Resume</button>
-				</a>
-			</div>
-		</div>
-	</div>
-
-	<div id='transitionPage'>
-		<div class='col-md-12 text-center'>
-			<img id='catPic' src="https://images.unsplash.com/photo-1482848945261-8bbeabb5e3fa?ixlib=rb-0.3.5&s=fb33e5b0da9e2adcf0030997edaf4169&auto=format&fit=crop&w=1650&q=80">
-		</div>
-	</div>
-
-	<div class='pageThree'>
-		<div class='contactContent text-center'>
-			<h1 id='contactMe'>Contact Me</h1>
-			<h2 id='contactMsg'>Not currently accepting new clients, but feel free to get in touch</h2>
-			<h2 id='email'> hteicheira@gmail.com</h2>
-		</div>
-	</div>
-
-
-
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js">
-	</script>
-	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js
-"></script>
-
+    <div class="pageFour text-center" id="p4">
+        <h1 class="titleColor">CONTACT</h1>
+        <h3 class="titleColor">Please feel free to reach out on email!</h3>
+        <hr>
+        <br>
+        <div id='icons' class='text-center'>
+        <a class="btn" href="https://github.com/hteichei/" target="blank"><i class="fa fa-github" id="githubicon" aria-hidden="true"></i></a>
+        <a class="btn" href="https://www.linkedin.com/in/hteicheira/" target="blank"><i class="fa fa-linkedin-square" id="linkedinicon" aria-hidden="true"></i></a>
+        <a class="btn" href="mailto:hteicheira@gmail.com" target="blank"><i class="fa fa-envelope" id="mailicon" aria-hidden="true"></i></a>
+      </div>
+    </div>
 </body>
+
+    <!-- Bootstrap core JavaScript -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src='index.js'></script>
 
 </html>
